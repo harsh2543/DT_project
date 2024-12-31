@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Asset Board</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="DT_logo.svg" alt="Logo" class="logo">
+        </div>
+        <h1>Interactive Asset Board</h1>
+        <p>Manage your assets effectively. Click the arrow to expand descriptions.</p>
+    </header>
+
+    <main class="container">
+        <!-- Asset 1 -->
+        <div class="asset-container">
+            <div class="asset">
+                <video controls>
+                    <source src="video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="description">
+                <button class="toggle-arrow" onclick="toggleDescription(this)">&#9660;</button>
+                <p class="description-text">This video demonstrates project management techniques. Click the arrow for more details.</p>
+            </div>
+        </div>
+
+        <!-- Asset 2 -->
+        <div class="asset-container">
+            <div class="asset">
+                <audio controls>
+                    <source src="audio.mp3" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+            <div class="description">
+                <button class="toggle-arrow" onclick="toggleDescription(this)">&#9660;</button>
+                <p class="description-text">This audio asset discusses collaboration strategies. Click the arrow for more details.</p>
+            </div>
+        </div>
+
+        <!-- Asset 3 -->
+        <div class="asset-container">
+            <div class="asset">
+                <img src="swiss8.jpg" alt="Project Illustration">
+            </div>
+            <div class="description">
+                <button class="toggle-arrow" onclick="toggleDescription(this)">&#9660;</button>
+                <p class="description-text">This image highlights the project's core concept. Click the arrow for more details.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Interactive Asset Board. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function toggleDescription(button) {
+            const descriptionText = button.nextElementSibling;
+            const isExpanded = descriptionText.style.display === 'block';
+            descriptionText.style.display = isExpanded ? 'none' : 'block';
+            button.innerHTML = isExpanded ? '&#9660;' : '&#9650;';
+        }
+    </script>
+</body>
+</html>

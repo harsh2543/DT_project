@@ -1,0 +1,118 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Styles */
+header {
+    background-color: #003f5c;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+    position: relative;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo-container {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+}
+
+.logo {
+    max-width: 120px;
+    border-radius: 8px;
+}
+
+header h1 {
+    margin: 10px 0 5px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+header p {
+    margin: 0;
+    font-size: 16px;
+}
+
+/* Main Container */
+.container {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
+}
+
+/* Asset Container */
+.asset-container {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.asset-container:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+/* Asset Section */
+.asset {
+    background-color: #f4f4f4;
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.asset video,
+.asset audio,
+.asset img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+/* Description Section */
+.description {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.toggle-arrow {
+    background: none;
+    border: none;
+    font-size: 18px;
+    color: #333;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.toggle-arrow:hover {
+    color: #0074d9;
+}
+
+.description-text {
+    margin: 0;
+    font-size: 14px;
+    color: #555;
+    display: none;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #003f5c;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
